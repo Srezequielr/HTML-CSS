@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi primera web html</title>
+</head>
+<body>
+    <!-- Ejercicio 1 -->
+    <a href="https://www.google.com.ar" target="_blank">Click aca.</a>
+    <!-- Ejercicio 2 -->
+    <img src="/Multimedia/bannerFedu2.png" alt="no me veo" width="400" height="100">
+    <!-- Ejercicio 3 -->
+    <p title="Soy una ayuda!"> palabra</p>
+    <p style="color:red" title="hola">palabra</p>
+    <!-- Ejercicio 4 -->
+    <p><b>Negrita</b></p> <!-- forma 1 -->
+    <p><strong>Negrita</strong></p> <!-- forma 2 -->
+    <p><em>Cursiva</em></p>
+    <p><b><em>Negrita cursiva</em></b></p>
+    <p><strong><em>Negrita cursiva</em></strong></p>
+    <p><u>Subrayado</u></p>
+    <p>Soy un <sup>Superindice</sup></p>
+    <!-- EJercicio 5 -->
+    <ul>
+        <li>Unidad 1</li>
+        <li>Unidad 2</li>
+        <li>Unidad 3</li>
+        <li>Trabajo Final</li>
+    </ul>
+    <!-- Ejercicio 6 -->
+    <table style="border: 1px solid black"> <!-- Con CSS -->
+        <tr>
+            <th>DNI</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </tr>
+        <tr>
+            <td>30.685.312</td>
+            <td>Hector</td>
+            <td>lepez</td>
+        </tr>
+    </table>
+    <table border="1"> <!-- Con border (no recomendable usar) -->
+        <tr>
+            <th>DNI</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </tr>
+        <tr>
+            <td>30.685.312</td>
+            <td>Hector</td>
+            <td>lepez</td>
+        </tr>
+    </table>
+    <!-- Ejercicio 7 -->
+    <div style="border: 1px solid black; width: 200px; padding: 0 0 5px 20px; margin: 20px 0 20px 0;">
+        <form action="Procesar_formulario.php" method="POST">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="nombre">Fecha de Nacimiento:</label><br>
+            <input type="date" id="fecha" name="fecha"><br>
+            <label for="item1">Tec. Web</label><br>
+            <input type="checkbox" id="item1" name="item1"><br>
+            <label for="item2">LCC</label><br>
+            <input type="checkbox" id="item2" name="item2"><br>
+            <label for="item3">LSI</label><br>
+            <input type="checkbox" id="item3" name="item3"><br>
+             <button>Enviar Datos</button><br> <!-- Forma 1 -->
+            <input type="submit" value="Enviar Datos"><br> <!-- Forma 2 -->
+        </form>
+    </div>
+    
+    <!-- Ejercicio 8 -->
+    <video src="Multimedia/sample-15s.mp4" width="640" height="360" controls>Entra aqui</video>
+</body>
+
