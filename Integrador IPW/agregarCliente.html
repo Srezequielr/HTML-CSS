@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>Agregar Cliente</title>
+  </head>
+  <body>
+    <header class="navBar">
+      <div class="navContainer">
+        <div class="imageContainer">
+          <img src="./Logo Banco.png" alt="Logo banco" class="logo" />
+        </div>
+        <div class="contentContainer">
+          <a class="buttons" href="index.html">Inicio</a>
+          <a class="buttons" href="login.html">Cerrar Sesion</a>
+        </div>
+      </div>
+    </header>
+    <section class="menuContainer">
+      <form class="itemsContainer" action="">
+        <div class="inputContainer">
+          <label for="nombre">Nombre</label>
+          <input
+            class="inputAdd"
+            id="nombre"
+            type="text"
+            required
+            onchange="inputHandler()"
+          />
+        </div>
+        <div class="inputContainer">
+          <label for="apellido">Apellido</label>
+          <input
+            onchange="inputHandler()"
+            class="inputAdd"
+            id="apellido"
+            type="text"
+            required
+          />
+        </div>
+        <div class="inputContainer">
+          <label for="dni">DNI</label>
+          <input
+            onchange="inputHandler()"
+            class="inputAdd"
+            id="dni"
+            type="text"
+            required
+          />
+        </div>
+        <div class="inputContainer">
+          <label for="nac">Fecha de Nacimiento</label>
+          <input id="nac" type="date" required />
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="textConteiner">
+        <h1>Agregar Cliente</h1>
+      </div>
+    </section>
+  </body>
+</html>
