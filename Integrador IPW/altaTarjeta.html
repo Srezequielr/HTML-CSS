@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Alta Tarjeta</title>
   </head>
   <body>
@@ -18,5 +18,56 @@
         </div>
       </div>
     </header>
+    <section class="menuContainer">
+      <div>
+        
+      </div>
+      <form class="itemsContainer" action="">
+        <div class="inputContainer">
+          <label for="nombre">Nombre</label>
+          <input
+            class="inputAdd"
+            id="nombre"
+            type="text"
+            required
+            onchange="inputHandler()"
+          />
+        </div>
+        <div class="inputContainer">
+          <label for="apellido">Apellido</label>
+          <input
+            onchange="inputHandler()"
+            class="inputAdd"
+            id="apellido"
+            type="text"
+            required
+          />
+        </div>
+        <div class="inputContainer">
+          <label for="dni">Num. Tarjeta</label>
+          <input
+            onchange="inputHandler()"
+            class="inputAdd"
+            id="dni"
+            type="text"
+            required
+          />
+        </div>
+        <div class="inputContainer">
+          <label for="nac">Fecha de Vencimiento</label>
+          <input id="nac" type="date" required />
+        </div>
+        <div class="inputContainer">
+          <label for="nac">Cod. de Seguridad</label>
+          <input id="nac" type="number" required />
+        </div>
+        <div class="inputContainer">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+      <div class="textConteiner">
+        <h1>Alta Tarjeta</h1>
+      </div>
+    </section>
   </body>
 </html>

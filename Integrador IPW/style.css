@@ -40,18 +40,6 @@ h1 {
   width: 50%;
 }
 
-/* --------------- */
-
-.menuContainer {
-  box-sizing: border-box;
-  margin: auto;
-  width: 70%;
-  padding: 6em;
-  min-height: 70vh;
-  display: flex;
-  flex-direction: row;
-}
-
 .buttons {
   font-size: 2em;
   text-decoration: none;
@@ -66,6 +54,19 @@ h1 {
   transition: 0.5s;
   background-color: #b6e7b6;
 }
+
+/* --------------- */
+
+.menuContainer {
+  box-sizing: border-box;
+  margin: auto;
+  width: 70%;
+  padding: 6em;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: row;
+}
+
 
 /* Loguin */
 
@@ -157,12 +158,9 @@ h1 {
 
 .itemsContainer {
   width: 60%;
-  /* background-color: antiquewhite; */
   display: grid;
   justify-content: space-evenly;
   grid-template-columns: 40% 40%;
-  /* gap: 10px; */
-  /* padding: 10px; */
 }
 
 .inputContainer {
@@ -211,3 +209,37 @@ h1 {
 }
 
 /* --------------- */
+
+/* Perfil del Cliente */
+
+.inputContainer p {
+  font-family: "Roboto", sans-serif;
+  margin: 2% 0;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: start;
+}
+
+
+.inputContainer .item {
+  font-size: 1.5em;
+  padding: 5% 5%;
+  border: none;
+  border-radius: 10px;
+  background-color: #b6e7b6;
+  transition: 0.5s;
+}
+
+.menuContainer button {
+  width: 40%;
+  border: none;
+  margin: 0.5em;
+  height: 3em;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #0c4612;
+  color: #ffffff;
+}
+
+/* ---------------------- */
