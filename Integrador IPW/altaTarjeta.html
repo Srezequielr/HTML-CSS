@@ -20,51 +20,59 @@
     </header>
     <section class="menuContainer">
       <div>
-        
+        <div class="cardsContainer">
+          <div >
+            <p>Hola soy la parde de adelante de ja tarjeta</p>
+          </div>
+          <div>
+            <p>Hola soy la parte de atras de la terjeta</p>
+          </div>
+        </div>
+        <form class="itemsContainer" action="">
+          <div class="inputContainer">
+            <label for="nombre">Nombre</label>
+            <input
+              class="inputAdd"
+              id="nombre"
+              type="text"
+              required
+              onchange="inputHandler()"
+            />
+          </div>
+          <div class="inputContainer">
+            <label for="apellido">Apellido</label>
+            <input
+              onchange="inputHandler()"
+              class="inputAdd"
+              id="apellido"
+              type="text"
+              required
+            />
+          </div>
+          <div class="inputContainer">
+            <label for="dni">Num. Tarjeta</label>
+            <input
+              onchange="inputHandler()"
+              class="inputAdd"
+              id="dni"
+              type="text"
+              required
+            />
+          </div>
+          <div class="inputContainer">
+            <label for="nac">Fecha de Vencimiento</label>
+            <input id="nac" type="date" required />
+          </div>
+          <div class="inputContainer">
+            <label for="nac">Cod. de Seguridad</label>
+            <input id="nac" type="number" required />
+          </div>
+          <div class="inputContainer">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
       </div>
-      <form class="itemsContainer" action="">
-        <div class="inputContainer">
-          <label for="nombre">Nombre</label>
-          <input
-            class="inputAdd"
-            id="nombre"
-            type="text"
-            required
-            onchange="inputHandler()"
-          />
-        </div>
-        <div class="inputContainer">
-          <label for="apellido">Apellido</label>
-          <input
-            onchange="inputHandler()"
-            class="inputAdd"
-            id="apellido"
-            type="text"
-            required
-          />
-        </div>
-        <div class="inputContainer">
-          <label for="dni">Num. Tarjeta</label>
-          <input
-            onchange="inputHandler()"
-            class="inputAdd"
-            id="dni"
-            type="text"
-            required
-          />
-        </div>
-        <div class="inputContainer">
-          <label for="nac">Fecha de Vencimiento</label>
-          <input id="nac" type="date" required />
-        </div>
-        <div class="inputContainer">
-          <label for="nac">Cod. de Seguridad</label>
-          <input id="nac" type="number" required />
-        </div>
-        <div class="inputContainer">
-          <button type="submit">Enviar</button>
-        </div>
-      </form>
+
       <div class="textConteiner">
         <h1>Alta Tarjeta</h1>
       </div>

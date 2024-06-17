@@ -60,11 +60,12 @@ h1 {
 .menuContainer {
   box-sizing: border-box;
   margin: auto;
-  width: 70%;
+  width: 80%;
   padding: 6em;
   min-height: 70vh;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 
@@ -242,4 +243,18 @@ h1 {
   color: #ffffff;
 }
 
+/* ---------------------- */
+
+/* Alta tarjeta */
+
+.cardsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cardsContainer div{
+  background-color: #538f53;
+  width: 45%;
+}
 /* ---------------------- */
