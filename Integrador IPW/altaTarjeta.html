@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
     <title>Alta Tarjeta</title>
   </head>
   <body>
@@ -19,53 +20,73 @@
       </div>
     </header>
     <section class="menuContainer">
-      <div>
+      <div class="cardHandler">
         <div class="cardsContainer">
-          <div >
-            <p>Hola soy la parde de adelante de ja tarjeta</p>
+          <div class="card" id="dorso">
+            <div class="logoContainer">
+              <img src="Logo Banco.png" alt="Tarjeta" />
+              <h4>Banco Centralis</h4>
+            </div>
+            <div class="info">
+              <p class="numTarj">
+                ____ ____ ____ ____
+              </p>
+              <div class="venc">
+                <p class="fe">VALIDO<br>HASTA</br></p>
+                <p id="vencDate" style="margin: 0;">venc</p>
+              </div>
+              <div class="namePh">
+                <p id="nameSurname">Nombre, apellido</p>
+                <img src="Visa_Logo.png" alt="" class="visa">
+              </div>
+            </div>
           </div>
-          <div>
-            <p>Hola soy la parte de atras de la terjeta</p>
+          <div class="card" id="reverso">
+            <div class="negro">
+              .
+            </div>
+            <p class="segCod">Cod. Seguridad</p>
           </div>
         </div>
         <form class="itemsContainer" action="">
           <div class="inputContainer">
             <label for="nombre">Nombre</label>
             <input
-              class="inputAdd"
+              class="nameSurname"
               id="nombre"
               type="text"
               required
-              onchange="inputHandler()"
+              onchange="nameSurnameHandler()"
             />
           </div>
           <div class="inputContainer">
             <label for="apellido">Apellido</label>
             <input
-              onchange="inputHandler()"
-              class="inputAdd"
+              onchange="nameSurnameHandler()"
+              class="nameSurname"
               id="apellido"
               type="text"
               required
             />
           </div>
           <div class="inputContainer">
-            <label for="dni">Num. Tarjeta</label>
+            <label for="">Num. Tarjeta</label>
             <input
-              onchange="inputHandler()"
-              class="inputAdd"
-              id="dni"
+              onchange="numTarjHandler()"
+              class="inputTarj"
+              id="numTarj"
               type="text"
+              maxlength=16
               required
             />
           </div>
           <div class="inputContainer">
-            <label for="nac">Fecha de Vencimiento</label>
-            <input id="nac" type="date" required />
+            <label for="venc">Fecha de Vencimiento</label>
+            <input onchange="vencHandler()" id="venc" type="month" required />
           </div>
           <div class="inputContainer">
-            <label for="nac">Cod. de Seguridad</label>
-            <input id="nac" type="number" required />
+            <label for="seg">Cod. de Seguridad</label>
+            <input onchange="segHandler()" id="seg" type="text" maxlength=3 required />
           </div>
           <div class="inputContainer">
             <button type="submit">Enviar</button>
