@@ -26,10 +26,21 @@ function reloj() {
 
   let horaActual = `${hora}:${munitos}:${segundos}`;
 
-  console.log(horaActual);
+  var options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  var dateString = tiempo.toLocaleDateString("es-ES", options);
+  let fecha = document.getElementById("fecha");
+  if (fecha != null) {
+    fecha.textContent = dateString;
+  }
+
   let horaDiplay = document.getElementById("time");
   if (horaDiplay != null) {
-    horaDiplay.textContent = horaActual
+    horaDiplay.textContent = horaActual;
   }
   setTimeout(reloj, 1000);
 }
